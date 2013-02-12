@@ -45,7 +45,7 @@ fi
 command="$command $filename"
 
 if [ -f "./Vagrantfile" ]; then
-    vagrant ssh -c "cd /vagrant && $command && exit"
+    vagrant ssh -c "cd /vagrant && unbuffer $command && exit"
 else
     $command
 fi

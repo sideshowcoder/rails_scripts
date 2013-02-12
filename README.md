@@ -3,6 +3,12 @@ Rails Scripts
 A collection of bash scripts I keep using for about every rails project. Just
 drop in the rails scripts folder and run with it!
 
+Dependecies
+-----------
+  * zeus (prefork env for rails to keep tests fast)
+  * vagrant (vm managment tool)
+  * expect-dev (contains unbuffered which is used to get colorized output over ssh)
+
 test
 ----
 Bash script to run rspec test correctly for a given environment, this is just an
